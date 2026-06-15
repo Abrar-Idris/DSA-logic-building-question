@@ -22,7 +22,7 @@ public class SecondSmallestElemet {
             firstSmallest = arr[0];
             secondSmallest = arr[1];
           }
-
+// most important part 
           for(int i =2; i<n; i++){
             if(arr[i]<firstSmallest){
                 secondSmallest = firstSmallest;
