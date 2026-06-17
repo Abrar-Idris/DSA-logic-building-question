@@ -1,9 +1,11 @@
 import java.util.Scanner;
+//Day 26 DSA practice
+//find common element in two arrays ..
 
-public class MergeTwoArrays {
-    //day 25 Merge two arrays 
+public class CommonElementInTwoArrays {
+    
     public static void main(String[] args) {
-         Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter length of First array: ");
         int n1 = sc.nextInt();
 
@@ -21,27 +23,19 @@ public class MergeTwoArrays {
         for(int i = 0; i<n2; i++){
             arr2[i]= sc.nextInt();
         }
+    
 
-       int n = n1+n2;
-       int merged[] = new int[n];
+         boolean duplicate = false;
 
-       int k =0;
-       
-       for(int i = 0; i<arr1.length;i++){
-        merged[k]=arr1[i];
-        k++;
-       }
-
-       for(int i = 0; i<arr2.length;i++){
-        merged[k]=arr2[i];
-        k++;
-       }
-       
-
-       for(int i = 0; i<merged.length;i++){
-        System.out.print(" "+merged[i]);
-       }
-       
-
+        for(int i = 0; i<n1;i++){
+            for(int j = 0; j<n2;j++){
+                if(arr1[i]==arr2[j]){
+                  System.out.println("dublicate : "+arr1[i]);
+                 duplicate = true;
+                 break;
+                }
+            }
+        }
+        
     }
 }
