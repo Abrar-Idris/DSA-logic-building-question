@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class CountOccurrencesOfGivenNumber {
+public class FindIndexOfTargetNum {
     public static void main(String[] args) {
-        
+         
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter length of First array: ");
         int n = sc.nextInt();
@@ -15,16 +15,18 @@ public class CountOccurrencesOfGivenNumber {
 
         System.out.print("Enter the treget Number: ");
         int treget =sc.nextInt();
-
-        int count = 0;
         
+        boolean visited = false;
         for(int i = 0; i<arr.length; i++){
             if (treget == arr[i]) {
-                count++;
+                visited = true;
+              System.out.println("Element "+treget+" Index Of  "+i);
+               break;
             }
         }
 
-        System.out.println("Number of Occurrenes "+count);
+        if(visited == false){
+            System.out.println("Element Not Found ");
+        }
     }
 }
-
