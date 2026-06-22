@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//find the Index of a target Element
 public class FindIndexOfTargetNum {
     public static void main(String[] args) {
          
