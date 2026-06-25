@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//check if array is sorted 
 public class checkArrayIsSorted {
     public static void main(String[] args) {
         
