@@ -1,5 +1,7 @@
 import java.util.Scanner;
 // find the first Duplicate Element
+
+// i face multiple problem in this question 
 public class FindFirstDuplicateElement {
    public static void main(String[] args) {
       Scanner sc = new Scanner(System.in);
