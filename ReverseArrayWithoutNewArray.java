@@ -21,7 +21,8 @@ public static void main(String[] args) {
         int right = n-1;
 
     
-        while (left<right){
+        for(int i = 0; i<n; i++){
+            if(left<right){
                 int temp = arr[left];
                 arr[left] =arr[right];
                 arr[right] = temp;
@@ -29,6 +30,7 @@ public static void main(String[] args) {
                 left++;
                 right--;
             }
+        }
 
        for(int i = 0; i<n; i++){
         System.out.print(arr[i]+" ");
