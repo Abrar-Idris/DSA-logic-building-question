@@ -1,5 +1,5 @@
 import java.util.Scanner;
-//Day 33 2D array 
+//Day 34 2D array 
 // Input and Print Matrix
 public class PrintMatrix {
    public static void main(String[] args) {
