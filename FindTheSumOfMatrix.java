@@ -1,4 +1,6 @@
 import java.util.Scanner;
+//day 35 
+//find the sum of all elements in a matrix
 
 public class FindTheSumOfMatrix {
     public static void main(String[] args) {
