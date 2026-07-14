@@ -1,4 +1,6 @@
 import java.util.Scanner;
+//day 40 DSA
+// transpose of matrix 
 
 public class TransposeOfMatrix {
     public static void main(String[] args) {
