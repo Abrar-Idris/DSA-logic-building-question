@@ -1,5 +1,6 @@
 import java.util.Scanner;
-
+//Day 39
+//find the diagonal sum of a matrix 
 public class FindDiagonalSumOfMatrix {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
