@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 public class FrequencyOfEachElementTwoDArray {
-
+//day 43
+//big challenging question 
+// dry run for understanding
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -27,7 +29,7 @@ public class FrequencyOfEachElementTwoDArray {
 
                 boolean visited = false;
 
-                // Check if current element already appeared before
+                // Check if current element
                 for (int x = 0; x <= i; x++) {
                     for (int y = 0; y < cols; y++) {
 
@@ -39,8 +41,7 @@ public class FrequencyOfEachElementTwoDArray {
                             break;
                         }
                     }
-                    if (visited)
-                        break;
+
                 }
 
                 if (visited)
