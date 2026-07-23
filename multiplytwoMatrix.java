@@ -51,7 +51,7 @@ public class multiplytwoMatrix {
                 matrixMultiply[i][j]= matrixA[i][j] * matrixB[i][j];
             }
         }
-       System.out.println("Matrix1 + matrix 2 = sum");
+       System.out.println("Matrix1 * matrix 2 = result");
         for(int i = 0; i<row1; i++){
             for(int j =0; j<cols2; j++){
                 System.out.print(matrixMultiply[i][j]+" ");
