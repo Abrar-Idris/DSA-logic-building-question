@@ -1,4 +1,4 @@
-
+//day 49
 //find the sum of primary and secondary diagonal of 
 // squre matrix
 
