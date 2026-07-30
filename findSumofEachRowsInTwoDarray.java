@@ -1,15 +1,14 @@
 import java.util.Scanner;
 
 /**
- * Day 53 
- 
- * CountEvenAndOddinTwoDarray
+ * 
+ * Day 53
+ * fint the sum of Each row in a 2d matrix ??
  */
-public class CountEvenAndOddinTwoDarray {
-
+public class findSumofEachRowsInTwoDarray {
+ 
     public static void main(String[] args) {
-         
-    Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
     System.out.print("Enter the row length : ");
     int rows =sc.nextInt();
@@ -24,6 +23,7 @@ public class CountEvenAndOddinTwoDarray {
           arr[i][j]=sc.nextInt();
         }
     }
+
      System.out.println();
 
     for(int i =0; i<rows; i++){
@@ -34,22 +34,13 @@ public class CountEvenAndOddinTwoDarray {
     }
 
     //logic
-    int evenNumber = 0;
-    int oddNumber = 0;
-
     for(int i =0; i<rows; i++){
+        int sum = 0;
         for(int j = 0; j<cols; j++){
-         if(arr[i][j]%2==0){
-            evenNumber++;
-         }else{
-            oddNumber++;
-         }
-        }   
+          sum += arr[i][j];
+        }
+        System.out.println("Row "+i+" sum = "+sum);
     }
-
-    System.out.println("total Even number : "+evenNumber);
-    System.out.println("total Odd number : "+oddNumber);
-
     }
-
+    
 }
