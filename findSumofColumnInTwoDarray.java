@@ -1,5 +1,6 @@
 import java.util.Scanner;
-
+//Day 54
+//find the sum of column in a 2D Matrix
 public class findSumofColumnInTwoDarray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
