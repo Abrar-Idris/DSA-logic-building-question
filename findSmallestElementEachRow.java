@@ -26,9 +26,9 @@ public class findSmallestElementEachRow {
     }
 //logic
 for(int i = 0; i< rows; i++){
-    int smallestElement = 0;
+    int smallestElement =arr[i][0];
     for(int j =0; j<cols; j++){
-        if(arr[i][j]>smallestElement){
+        if(arr[i][j]<smallestElement){
             smallestElement=arr[i][j];
         }
 

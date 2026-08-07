@@ -1,8 +1,9 @@
 import java.util.Scanner;
-
-public class findLargestElementEachColumn {
-   public static void main(String[] args) {
-     Scanner sc = new Scanner(System.in);
+//day 58
+//find the smallest element in each column
+public class findsmallestElementEachColumn {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
     
     System.out.print("Enter the row lenght : ");
     int rows =sc.nextInt();
@@ -26,14 +27,14 @@ public class findLargestElementEachColumn {
     }
 //logic
 for(int j = 0; j< cols; j++){
-    int largestElement = 0;
+    int smallest = arr[j][0];
     for(int i =0; i<rows; i++){
-        if(arr[i][j]>largestElement){
-            largestElement=arr[i][j];
+        if(arr[i][j]<smallest){
+            smallest=arr[i][j];
         }
 
     }
-    System.out.println("column "+j+" largest Element : "+largestElement);
-   } 
+    System.out.println("column "+j+" smallest Element : "+smallest);
+    }
 }
 }
