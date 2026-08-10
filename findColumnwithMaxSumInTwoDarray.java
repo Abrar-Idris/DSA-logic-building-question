@@ -1,8 +1,9 @@
 import java.util.Scanner;
-
-public class findrowWithMaxSumInTwoDarray {
- public static void main(String[] args) {
-     Scanner sc = new Scanner(System.in);
+//find the column with maximum sum in a 2d matrix
+// day 61
+public class findColumnwithMaxSumInTwoDarray {
+    public static void main(String[] args) {
+          Scanner sc = new Scanner(System.in);
     
     System.out.print("Enter the row lenght : ");
     int rows =sc.nextInt();
@@ -27,21 +28,22 @@ public class findrowWithMaxSumInTwoDarray {
 
     System.out.println();
 //logic 
-int row =0;
+int col =0;
 int maximumSum = Integer.MIN_VALUE;
 
-for(int i = 0; i<rows; i++){
+for(int j = 0; j<cols; j++){
     int sum = 0;
-    for(int j =0; j<cols; j++){
+    for(int i =0; i<rows; i++){
        sum += arr[i][j];
     }
-    System.out.println("Row "+i+" sum : "+sum);
+    System.out.println("Row "+j+" sum : "+sum);
     if(sum>maximumSum){
         maximumSum =sum;
-        row =i;
+        col =j;
     }
 }
 System.out.println();
-  System.out.println("Row "+row+" has Maximum sum : "+maximumSum);
+  System.out.println("Row "+col+" has Maximum sum : "+maximumSum);
  }   
+
 }
