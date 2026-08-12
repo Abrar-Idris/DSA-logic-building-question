@@ -1,5 +1,6 @@
 import java.util.Scanner;
-
+//day 63
+// find the coloum ......
 public class findColumnwithMinsuminTwoDarray {
     public static void main(String[] args) {
          Scanner sc = new Scanner(System.in);
@@ -33,7 +34,7 @@ for(int j =0; j<cols; j++){
     for(int i =0; i<rows; i++){
        colSum += arr[i][j];
     }
-    System.out.println("Row "+j+" sum : "+colSum);
+    System.out.println("Column "+j+" sum : "+colSum);
     //check 
     if(colSum<minimumSum){
         minimumSum = colSum;
