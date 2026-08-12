@@ -36,14 +36,14 @@ for(int j = 0; j<cols; j++){
     for(int i =0; i<rows; i++){
        sum += arr[i][j];
     }
-    System.out.println("Row "+j+" sum : "+sum);
+    System.out.println("column "+j+" sum : "+sum);
     if(sum>maximumSum){
         maximumSum =sum;
         col =j;
     }
 }
 System.out.println();
-  System.out.println("Row "+col+" has Maximum sum : "+maximumSum);
+  System.out.println("column "+col+" has Maximum sum : "+maximumSum);
  }   
 
 }
