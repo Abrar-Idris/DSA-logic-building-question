@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//find the sum of element between two given indexs in an array using prefix sum 
 public class findSumOfNumberUsingPrefix {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
