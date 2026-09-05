@@ -1,5 +1,6 @@
 import java.util.Scanner;
-
+//find the maximum sub array sum uisng perfix sum
+//day 72
 public class findMaxSubarraySumUsingPerfixSum {
    public static void main(String[] args) {
       Scanner sc = new Scanner(System.in);
@@ -22,7 +23,7 @@ public class findMaxSubarraySumUsingPerfixSum {
         for(int i =0; i<n; i++){
             System.out.print(prefixSum[i]+" ");
         }
-        int max = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
 
         for(int startIndex = 0;startIndex<n;startIndex++){
             for(int endIndex = startIndex; endIndex<n; endIndex++){
