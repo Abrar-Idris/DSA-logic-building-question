@@ -22,7 +22,7 @@ public class firtElementThatAppearnsMoreThanOneTime {
    
     boolean found =false;
 
-   for(int i =0; i<n-1; i++){
+   for(int i =0; i<n; i++){
     for(int j =0; j<i; j++){
     
         if(arr[i]==arr[j]);
@@ -30,11 +30,14 @@ public class firtElementThatAppearnsMoreThanOneTime {
          System.out.println("first repeating element: "+arr[i]);
         found = true;
         break;
+
+        //first loop stop
         }
     }
     if(found){
         break;
     }
+    //second loop stop 
    }
 
     if(!found){
