@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void selectionSort(int arr[],int n){ //o(n2)
+void selectionSort(int arr[],int n){ 
     for(int i =0; i<n-1; i++){
      int smallestIndex = i;// unshorted part stating index
      for(int j=i+1;j<n;j++){
@@ -14,12 +14,13 @@ void selectionSort(int arr[],int n){ //o(n2)
 
 }
 
+//time o(n2)
+
 int main(){
     int n = 5;
     int arr[] ={4,1,5,2,3};
     
     selectionSort(arr,n);
-    // printArray(arr,n);
      for(int i =0;i<n;i++){
         cout<<arr[i]<< " ";
     }
@@ -28,3 +29,5 @@ int main(){
     
     return 0;
 }
+
+
