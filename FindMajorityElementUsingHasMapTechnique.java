@@ -17,9 +17,9 @@ public class FindMajorityElementUsingHasMapTechnique {
           for(int key: map.keySet()){
             if(map.get(key)>arr.length/2){
                 System.out.println("Majority element "+key);
-            }else{
-                 System.out.println("not exist Majority element ");
             }
+            
           }
+           System.out.println("not exist Majority element ");
     }
 }
